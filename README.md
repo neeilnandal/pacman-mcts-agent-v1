@@ -285,24 +285,6 @@ def createTeam(firstIndex, secondIndex, isRed, first="PacmanAgent", second="Ghos
 
 This avoids unnecessary dynamic evaluation.
 
-## OODA Summary
-
-### Observe
-
-The game requires agents to attack and defend at the same time. Pacman must collect food, avoid ghosts, and return home safely.
-
-### Orient
-
-A single fixed policy is too weak. The agent needs different behaviors depending on risk, carried food, and enemy position.
-
-### Decide
-
-Use feature-based food seeking for safe attack, MCTS-inspired planning for return-home behavior, and rule-based defense for the Ghost agent.
-
-### Act
-
-Implement a hybrid team with offensive and defensive agents, score tracking, and repeated-game visualization.
-
 ## First-Principles Design
 
 The core decision is not:
@@ -463,14 +445,6 @@ ai-agent
 ```text
 Hybrid Pac-Man Capture the Flag AI agent using MCTS-inspired offensive planning, rule-based defensive ghost behavior, ghost-threat detection, and score visualization.
 ```
-
-## Peer Review Verdict
-
-This is a good academic Game AI project with clear portfolio value.
-
-It should be presented as a hybrid heuristic-search agent, not as a full industrial-grade MCTS implementation. The MCTS component is useful but simplified. The strongest part is the situational agent design: food seeking when safe, return-home planning when risk increases, and defensive invader chasing.
-
-The main weakness is engineering polish. Globals, `eval()`, embedded plotting, and simplified MCTS selection should be cleaned in a v2.
 
 ## Final Verdict
 
