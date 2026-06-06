@@ -329,38 +329,6 @@ The strongest AI skill shown is not just MCTS. It is the combination of search, 
 * Add command-line evaluation runner
 * Add ablation study for MCTS vs reflex behavior
 
-## Suggested Repository Structure
-
-```text
-pacman-capture-the-flag-mcts-agent/
-│
-├── myTeam.py
-├── README.md
-├── requirements.txt
-├── .gitignore
-├── reports/
-│   └── results_summary.md
-└── plots/
-    └── score_comparison.png
-```
-
-If you refactor further:
-
-```text
-pacman-capture-the-flag-mcts-agent/
-│
-├── agents/
-│   ├── offensive_agent.py
-│   ├── defensive_agent.py
-│   └── mcts.py
-├── evaluation/
-│   ├── run_matches.py
-│   └── plot_scores.py
-├── myTeam.py
-├── README.md
-└── requirements.txt
-```
-
 ## SEO Keywords
 
 Relevant keywords:
@@ -375,18 +343,3 @@ Relevant keywords:
 * defensive agent
 * offensive Pacman agent
 * Python game AI project
-
-## Repository Topics
-
-```text
-pacman
-capture-the-flag
-game-ai
-mcts
-monte-carlo-tree-search
-multi-agent-systems
-heuristic-search
-python
-adversarial-search
-ai-agent
-```
