@@ -244,47 +244,6 @@ python capture.py -r myTeam -b baselineTeam -n 10 -q
 
 Command-line options may vary depending on the specific Pac-Man framework version.
 
-## Code Quality Notes
-
-The current implementation is a strong academic prototype, but it should be cleaned before being treated as a polished GitHub project.
-
-Recommended improvements:
-
-| Area               | Current issue                    | Suggested fix                                  |
-| ------------------ | -------------------------------- | ---------------------------------------------- |
-| Team creation      | Uses `eval()`                    | Replace with explicit class mapping            |
-| Score tracking     | Uses global variables            | Move into a tracker class                      |
-| MCTS selection     | Uses average reward only         | Add UCT exploration term                       |
-| Naming             | Some inconsistent variable names | Rename for readability                         |
-| Plotting           | Mixed into agent logic           | Move plotting to separate evaluation script    |
-| Defensive behavior | Simple heuristic                 | Add patrol zones and better invader prediction |
-| Evaluation         | Only score plot                  | Add win rate, average score, food returned     |
-
-## Suggested Safer Team Creation
-
-Replace:
-
-```python
-return [eval(first)(firstIndex), eval(second)(secondIndex)]
-```
-
-with:
-
-```python
-AGENT_REGISTRY = {
-    "PacmanAgent": PacmanAgent,
-    "GhostAgent": GhostAgent,
-}
-
-def createTeam(firstIndex, secondIndex, isRed, first="PacmanAgent", second="GhostAgent"):
-    return [
-        AGENT_REGISTRY[first](firstIndex),
-        AGENT_REGISTRY[second](secondIndex),
-    ]
-```
-
-This avoids unnecessary dynamic evaluation.
-
 ## First-Principles Design
 
 The core decision is not:
@@ -305,7 +264,7 @@ That is why the offensive agent changes behavior when ghost risk increases or ca
 
 ### User
 
-A student, AI researcher, game-AI learner, or contest participant building a Capture the Flag Pac-Man team.
+A student, AI researcher and/or game-AI learner building a Capture the Flag Pac-Man team.
 
 ### Pain Point
 
@@ -314,14 +273,6 @@ Simple reflex agents collect food but often die because they do not manage risk 
 ### Smallest Useful Version
 
 A hybrid attacker-defender team that collects food, detects ghost threats, and returns home when risk increases.
-
-### Current Version
-
-The project implements food-seeking, MCTS-inspired retreat planning, defensive invader chasing, and score visualization.
-
-### What Still Needs Work
-
-The next step is cleaner engineering: remove globals, add UCT, separate evaluation logic, and report win-rate metrics.
 
 ## Security and Code Safety Notes
 
@@ -438,26 +389,4 @@ heuristic-search
 python
 adversarial-search
 ai-agent
-```
-
-## Meta Description
-
-```text
-Hybrid Pac-Man Capture the Flag AI agent using MCTS-inspired offensive planning, rule-based defensive ghost behavior, ghost-threat detection, and score visualization.
-```
-
-## Final Verdict
-
-Keep and publish after light cleanup.
-
-This project is especially relevant for a profile targeting AI, reinforcement learning, game AI, and multi-agent systems. It shows applied decision-making under uncertainty, not just model training.
-
-## Portfolio One-Liner
-
-Built a hybrid **Pac-Man Capture the Flag AI agent** combining MCTS-inspired offensive planning, rule-based defensive ghost behavior, food-seeking heuristics, threat detection, and match-score visualization.
-
-## GitHub Repository Description
-
-```text
-Hybrid Pac-Man Capture the Flag agent using MCTS-inspired offensive planning and rule-based defensive behavior.
 ```
