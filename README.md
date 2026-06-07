@@ -21,6 +21,8 @@ The agent is designed for a competitive Capture the Flag setting where each team
 | Visualization   | Red/blue score tracking across games                          |
 | Main objective  | Build a competitive attacker-defender team                    |
 
+<img width="1014" height="587" alt="image" src="https://github.com/user-attachments/assets/323ee57d-6776-4db3-9d99-14c9dfad289e" />
+
 ## Problem
 
 Pac-Man Capture the Flag is a multi-agent decision problem.
