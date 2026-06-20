@@ -1,1 +1,43 @@
+=====================================
 
+Game 1
+
+Red Team:
+myTeam
+
+Blue Team:
+baselineTeam
+
+Final Score
+
+18
+
+Winner
+
+Red Team
+
+=====================================
+
+Game 2
+
+Final Score
+
+16
+
+Winner
+
+Red Team
+
+...
+
+=====================================
+
+Game 10
+
+Final Score
+
+16
+
+Winner
+
+Red Team
