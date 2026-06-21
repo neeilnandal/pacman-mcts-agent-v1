@@ -1,43 +1,7 @@
-=====================================
-
-Game 1
-
-Red Team:
-myTeam
-
-Blue Team:
-baselineTeam
-
-Final Score
-
-18
-
-Winner
-
-Red Team
-
-=====================================
-
-Game 2
-
-Final Score
-
-16
-
-Winner
-
-Red Team
-
-...
-
-=====================================
-
-Game 10
-
-Final Score
-
-16
-
-Winner
-
-Red Team
+numInvaders, onDefense, invaderDistance, totalFoodDistance, closestFoodDistance, ELO score(opponent/own), win/lose rate
+-100            10           -10                 -                  -                    760/910            0.02/0.06
+-100            10           -10               -0.1                 -                    943/988            0.07/0.0
+-100            10           -10               -0.01                -                    941/988            0.06/0.0
+-100            10           -10               -0.001               -                    952/996            0.07/0.0
+-100            10           -10                 -                 -5                    961/996            0.06/0.0
+-100            10           -10                 -                 -1                    954/990            0.04/0.0
