@@ -7,5 +7,5 @@ MCTS + finetuned heuristic, baseline, 1569.42, 940.02, 84.00
 
 Hyperparameter, Average ELO, Enemy ELO, Win Rate
 depth=5, 1071.77, 972.3, 36.84
-depth = 7
-depth = 10
+depth=7
+depth=10
