@@ -3,9 +3,5 @@ MCTS + Random rollouts, baseline, 1371.21, 1010.01, 58.00
 MCTS + untested heuristic, baseline, 1317.27, 1038.04, 36.54
 MCTS + finetuned heuristic, baseline, 1569.42, 940.02, 84.00
 
-=============================================================================================
 
-Hyperparameter, Average ELO, Enemy ELO, Win Rate
-depth=5, 1071.77, 972.3, 36.84
-depth=7
-depth=10
+
