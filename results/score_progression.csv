@@ -1,13 +1,4 @@
-game,red_score,blue_score
-1,18,7
-2,16,8
-3,20,9
-4,14,10
-5,17,8
-6,15,11
-7,21,8
-8,13,10
-9,18,9
-10,16,8
+Agent, Opponent, Average ELO, Enemy ELO, Agent Win Rate (%)
+MCTS+Random rollouts, baseline, 1371.21, 1010.01, 58.00
 
 
