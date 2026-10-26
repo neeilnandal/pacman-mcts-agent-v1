@@ -262,8 +262,6 @@ Which move improves the agent’s chance of collecting food and surviving long e
 
 That is why the offensive agent changes behavior when ghost risk increases or carried food becomes valuable.
 
-## Founder-Style Product Diagnosis
-
 ### User
 
 A student, AI researcher and/or game-AI learner building a Capture the Flag Pac-Man team.
@@ -331,17 +329,4 @@ The strongest AI skill shown is not just MCTS. It is the combination of search, 
 * Add command-line evaluation runner
 * Add ablation study for MCTS vs reflex behavior
 
-## SEO Keywords
 
-Relevant keywords:
-
-* Pac-Man Capture the Flag AI
-* Monte Carlo Tree Search
-* MCTS game agent
-* multi-agent game AI
-* Pacman AI agent
-* heuristic game AI
-* adversarial search
-* defensive agent
-* offensive Pacman agent
-* Python game AI project
